@@ -152,6 +152,7 @@ X_poly_val = [ones(size(X_poly_val, 1), 1), X_poly_val];           % Add Ones
 fprintf('Normalized Training Example 1:\n');
 fprintf('  %f  \n', X_poly(1, :));
 
+
 fprintf('\nProgram paused. Press enter to continue.\n');
 pause;
 
@@ -166,6 +167,7 @@ pause;
 
 lambda = 0;
 [theta] = trainLinearReg(X_poly, y, lambda);
+
 
 % Plot training data and fit
 figure(1);
